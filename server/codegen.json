@@ -8,7 +8,12 @@
                 "typescript-resolvers"
             ],
             "config": {
-                "skipTypename": true
+                "skipTypename": true,
+                "contextType": "../resolvers.js#ResolverContext",
+                "mappers": {
+                    "Company": "../db/types.js#CompanyEntity",
+                    "Job": "../db/types.js#JobEntity"
+                }
             }
         }
     }
